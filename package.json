@@ -1,0 +1,25 @@
+{
+  "name": "online-shop",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ArkanTalebi/online-shop#readme",
+  "bugs": {
+    "url": "https://github.com/ArkanTalebi/online-shop/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArkanTalebi/online-shop.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm --prefix client start",
+    "server": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
